@@ -9,11 +9,7 @@ guard_efficiency <- function(ppg, apg, to_pg, fg_pct, threes_taken,
     3 * (fouls)
   return(efficiency / mins)
 }
+
 guard_efficency_grade <- function(efficency){
-  if(efficency > 2){
-    return(100)
+    return(efficency * 30)
   }
-  else{
-    return(efficency * 50)
-  }
-}
